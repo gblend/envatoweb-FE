@@ -164,32 +164,20 @@
                    <h4 class="text_primary text_caption pt-4">Upload Campaign Advertisement Content</h4>
                    <p class="text_light text_normal">This is your Ad content that will be publish by the Publisher to their social media profiles.</p>
                    <div class="d-flex flex-column flex-sm-row pt-4 pt-sm-5">
-                       <div class="wrapper d-flex flex-column align-items-center mb-4 mb-sm-0 py-5 mr-sm-3 mr-md-5">
-                           <span class="iconify" data-icon="gg:display-grid" data-inline="false" style="color: rgba(51, 51, 51, 0.8);"></span>
-                           <p class="text_primary text_large m-0 py-1 pt-3">Display</p>
-                           <p class="text_light text_small m-0 text-center">This is some text inside a div block</p>
-                       </div>     
-                       <div class="wrapper d-flex flex-column align-items-center mt-4 mt-sm-0 py-5 ml-sm-3 ml-md-5">
-                           <span class="iconify" data-icon="bi:image-fill" data-inline="false" style="color: rgba(51, 51, 51, 0.8);"></span>
-                           <p class="text_primary text_large m-0 py-1 pt-3">Native</p>
-                           <p class="text_light text_small m-0 text-center">This is some text inside a div block</p>
-                       </div>   
+                    <form action="/file-upload" id="my-drop-1" class="dropzone wrapper d-flex flex-column align-items-center mb-4 mb-sm-0 pt-5 mr-sm-3 mr-md-5">
+                        <span class="iconify" data-icon="subway:video-1" data-inline="false" style="color: rgba(51, 51, 51, 0.8);"></span>
+                        <p class="text_primary text_large m-0 py-1 pt-3">Video Upload</p>
+                        <p class="text_light text_small m-0 text-center">Upload your video files here <br> Drage & Drop or <span style="font-weight: 700; color: var(--secondary);"> Browse</span></p>
+                     </form>
+                
+                  
+                    <form action="/file-upload" id="my-drop" class="dropzone wrapper d-flex flex-column align-items-center mt-4 mt-sm-0 pt-5 ml-sm-3 ml-md-5">
+                        <span class="iconify" data-icon="bi:image-fill" data-inline="false" style="color: rgba(51, 51, 51, 0.8);"></span>
+                        <p class="text_primary text_large m-0 py-1 pt-3">Image Upload</p>
+                        <p class="text_light text_small m-0 text-center">Upload your image files here <br> Drage & Drop or <span style="font-weight: 700; color: var(--secondary);"> Browse</span></p>
+                    </form>   
                </section>
-               <section id="upload-files" class="pb-5">
-                   <div class="row pt-3 px-3">
-                       <div class="col-12 bg_shade py-5 text-center">
-                          <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
-                           <span class="iconify my-3" data-icon="fa-solid:file-upload" data-inline="false" style="color: #fff; background-color: transparent;"></span>
-                           <p class="text_larger text_primary m-0 pb-2">Drag & Drop or 
-                               <span class="text_secondary">
-                                   <label for="fileInput" style="cursor: pointer;">Browse</label>
-                                   <input type="file" name="files" id="fileInput" class="d-none">
-                               </span></p>
-                           <p class="text_light text_small m-0 pb-3">We currently support JPG, GIF, PNG and make <br> sure your file size is not more than 600kb</p>
-                          </form>
-                       </div>
-                   </div>
-               </section>
+               
                <hr>
                <div class="d-flex justify-content-end align-items-center pb-5 pt-3 page-navigation">
                    <button class="text_large py-2 py-md-3 px-4 px-md-5 text-white bg_tint mr-3">Back</button>
