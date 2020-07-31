@@ -1,11 +1,7 @@
 :root {
   --sideBar-primary-color: #b9b9b9;
   --sideBar-secondary-color: #f5f6fa;
-<<<<<<< HEAD
-  --sideBar-active: #362f74;  
-=======
   --sideBar-active: #362f74;
->>>>>>> develop
 }
 
 body {
