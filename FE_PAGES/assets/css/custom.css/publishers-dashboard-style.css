@@ -70,13 +70,13 @@ body {
 /*
 *
 * ==========================================
-* FOR DEMO PURPOSE
+* FOR PaGE PURPOSE
 * ==========================================
 *
 */
-/* .chartjs-render-monitor {
-  margin-left: -6px;
-} */
+button.navbar-toggler.px-0 {
+    border: 0;
+}
 .separator {
   margin-bottom: 5px;
   border-bottom: 1px solid #c4c4c4;
@@ -143,7 +143,6 @@ body {
 }
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  /* color: black; */
   background: var(--main-color);
 }
 .slick-dots li {
@@ -180,7 +179,6 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(54, 47, 116, 0.25);
 }
 .btn.export {
-  /* border: none; */
   color: grey;
   color: #233a3a;
   cursor: pointer;
