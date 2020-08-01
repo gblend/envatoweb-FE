@@ -1,11 +1,10 @@
+/* Import Google web font Source Sans Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600&display=swap');
 
-:root{
-   
+/* Declare gloabl css variables*/
+:root {
     --primary-color: #362F74;
-   
     --light-color: #F0F0F7; 
-
     --main-font-family: 'Source Sans Pro', sans-serif;
 
     --h1-size: 60px;
@@ -17,30 +16,31 @@
     --small-text-size: 14px;
 }
 
-body{
+body {
     font-family: var(--main-font-family);
 }
-
+/* Remove Bootstrap default gutters and padding*/
 .row {
     padding: 0;
     margin: 0;
 }
-
+/* Set Custom Heading Font Sizes*/
 h1 {font-size: var(--h1-size);}
 h2 {font-size: var(--h2-size);}
 h3 {font-size: var(--h3-size);}
 h4 {font-size: var(--sub-heading-size);}
 
-.heading{font-weight: bold}
-.light-heading{font-weight: 600}
+/* Set Font weight Classes*/
+.heading {font-weight: bold}
+.light-heading {font-weight: 600}
 
-.hero-msg-heading{
+
+/* Hero Section Styles */
+.hero-msg-heading {
     line-height: 75px;
 }
-
-.hero-msg-text{
-    font-size: 26px;
-   
+.hero-msg-text {
+    font-size: 26px; 
 }
 .hero-img-box {
     display: flex;
@@ -48,27 +48,42 @@ h4 {font-size: var(--sub-heading-size);}
     justify-content: center;
 }
 
-.sponsors{
+/* Sponsors Section Styles */
+.sponsors {
     background-color: var(--light-color) ;
     text-align: center;
 }
-.sponsors-icon-box{
+.sponsors-icon-box {
    display: inline-block;
    font-size: 50px;
 }
+
+/* Main About Section Styles */
 .about-main-text{
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.2px;
 }
 
-.mission-card{
+/* Mission Section Styles */
+.mission-card {
     border: 0.795032px solid #FFFFFF;
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
     border-radius: 7.95032px;
     height: 100%;
     transition: color 0.5s;
 }
+.mission-card:hover {
+    color: #FFFFFF;
+}
+.mission-card-title{
+    font-size: 44px;
+}
+.mission-card-text{
+    font-size: var(--big-body-text-size);
+    width:196px;
+}
+/* Use Pseudo element to achieve gradient transition effect */
 .mission-card::after {
     content: "";
     background: linear-gradient(158.32deg, #362F74FF -1.06%, #191445FF 111.65%);
@@ -83,75 +98,49 @@ h4 {font-size: var(--sub-heading-size);}
     transition: opacity 0.75s;
   }
 
-
 .mission-card:hover::after{
     opacity: 1;
 }
 
-.mission-card:hover{
-    color: #FFFFFF;
-}
-
-
-.mission-card-title{
-    font-size: 44px;
-}
-
-
-.mission-card-text{
-    font-size: var(--big-body-text-size);
-    width:196px;
-}
-
-
+/* Social Section Styles */
 .social-heading{
     color: #333333;
 }
-
- .social-icon{
-     display: inline-block;
-     border-radius: 30%;
-     width: 25px;
- }
-
- .social-icon img {
+.social-icon{
+    display: inline-block;
+    border-radius: 30%;
+    width: 25px;
+}
+.social-icon img {
     width:100%
 }
 
 
+/* To Large Screens */
 @media (max-width:992px) {
-
-:root {
-
-    --h1-size: 48px;
-    --h2-size: 42px;
-    --h3-size: 32px;
-    --sub-heading-size: 22px;
-   
-}
-.hero-msg-heading{
-    line-height: 60px;
-}
-
-
-}
-
-@media (max-width:576px) {
-
     :root {
-    
+        --h1-size: 48px;
+        --h2-size: 42px;
+        --h3-size: 32px;
+        --sub-heading-size: 22px;
+    }
+    .hero-msg-heading{
+        line-height: 60px;
+    }
+}
+/* To Small Screens */
+@media (max-width:576px) {
+    :root {
         --h1-size: 32px;
         --h2-size: 26px;
         --h3-size: 26px;
         --sub-heading-size: 22px;
     }
-    .hero-msg-heading{
+    .hero-msg-heading {
         line-height: 40px;
     }
-    .mission-card-title{
+    .mission-card-title {
         font-size: 50px;
     }
-    
-    
-    }
+}
     
